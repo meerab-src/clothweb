@@ -162,8 +162,13 @@ display: none;
   background-color: transparent;
   color: #2b2929;
   border: 0;
+font-size: 18px;
   padding: 14px 80px 14px 65px;
 cursor: pointer;
+ transition: 0.2s ease;  
+}
+#hero button:hover{
+  background-color: #dc320c;
 }
 
 #feature .fe-box{
@@ -1149,4 +1154,98 @@ footer .copyright p {
   margin-top: 40px;
   border-radius: 12px;
   overflow: hidden;
+}
+
+
+/* cart page */
+
+.cart-page {
+  margin-top: 120px;
+  overflow-x: auto;
+}
+
+.cart-page h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.cart-page table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.cart-page thead {
+  background-color: #e3e6f3;
+  font-weight: 600;
+}
+
+.cart-page th,
+.cart-page td {
+  padding: 16px;
+  border: 1px solid #ddd;
+}
+
+.cart-page td img {
+  width: 80px;
+  border-radius: 10px;
+}
+
+.cart-page input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.cart-page i.far {
+  color: #f44336;
+  font-size: 18px;
+}
+
+.cart-summary {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
+
+.summary-box {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  padding: 25px;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.summary-box h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.summary-box table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.summary-box td {
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.summary-box .normal {
+  width: 100%;
+  background: #088178;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.summary-box .normal:hover {
+  background: #066e69;
 }
