@@ -738,7 +738,73 @@ footer .copyright p {
 }
 
 /* shop page styles */
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Spartan', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Fix */
+#header {
+    position: sticky;
+    top: 0;
+    background: #E3E6F3;
+    z-index: 1000;
+    padding: 15px 5%;
+}
+
+/* Product Details Section - Fixed Positioning */
+#prodetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 5%;
+    margin-top: 0; /* Removed excessive margin */
+    gap: 30px;
+}
+
+#prodetails .single-pro-image {
+    flex: 1 1 45%;
+    min-width: 300px;
+    align-self: flex-start; /* Align to top */
+}
+
+#prodetails .single-pro-details {
+    flex: 1 1 45%;
+    min-width: 300px;
+    padding-top: 0;
+}
+
+/* Price Alignment Fix */
+#prodetails .single-pro-details h2 {
+    font-size: 26px;
+    color: #088178;
+    margin: 5px 0 15px 0; /* Tighter spacing */
+}
+
+/* Remove all excessive spacing */
+#product1 {
+    padding: 40px 5% 0; /* Reduced top padding */
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    #prodetails {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+    
+    #product1 {
+        padding: 30px 15px 0;
+    }
+}
 #prodetails {
     display: flex;
     flex-wrap: wrap;
@@ -748,16 +814,9 @@ footer .copyright p {
     gap: 40px;
 }
 
-#prodetails .single-pro-image {
-    width: 45%;
-    min-width: 300px;
-}
 
-#prodetails .single-pro-details {
-    width: 45%;
-    min-width: 300px;
-    padding-top: 0;
-}
+
+
 
 #prodetails .single-pro-details h4 {
     padding: 10px 0 5px 0;
@@ -766,11 +825,7 @@ footer .copyright p {
     color: #222;
 }
 
-#prodetails .single-pro-details h2 {
-    font-size: 26px;
-    color: #088178;
-    margin: 10px 0;
-}
+
 
 .small-img-group {
     display: flex;
