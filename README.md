@@ -1,1 +1,1 @@
-its a clothing website
+This is a clothing website
